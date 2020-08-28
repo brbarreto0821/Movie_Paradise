@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reviews</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/movie.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.unveil.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative; background: #9dc02e; max-width: 1170px; width: 100%; margin: 0 auto;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+</head>
+
+<body>
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div class="container">
+        <div class="wrap_1">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="brand put-left">
+                        <div class="wrap">
+                            <h1>
+                                <a href="home.html"><span class="fa fa-film"></span> Movie <br/> Paradise</a>
+                            </h1>
+                        </div>
+                    </div>
+
+                    <form id="search" class="put-right" action="search/search.php" method="GET" accept-charset="utf-8">
+                        <label class="input_wrap" for="search">
+                            <input type="text" name="s" placeholder="Search:"/>
+                        </label>
+                        <a class="fa fa-search" onclick="document.getElementById('search').submit()"></a>
+                    </form>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <nav>
+                        <ul class="sf-menu">
+                            <li><a class="fa-home" href="home.html"></a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li class="current"><a href="reviews.html">Reviews</a></li>
+                            <li>
+                                <a href="news.html">News</a>
+                                <ul>
+                                    <li><a href="products.html">Products</a></li>
+                                    <li class="current"><a href="reviews.html">Reviews</a>
+                                        <ul>
+                                            <li><a href="products.html">Products Again</a></li>
+                                            <li class="current"><a href="reviews.html">Reviews again</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="policy.html">Privacy</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+<div class="bg_1 wrap_5">
+    <div class="container">
+        <div class="row">
+            <div class="grid_8">
+                <h2 class="header_7 color_4">
+                    movies <br/>
+                    review
+                </h2>
+
+                <div class="row">
+                    <div class="grid_4">
+                        <div class="box_6 indent_1">
+                            <div class="put-left"><img data-type="unveil" data-src="images/index-2_img01.jpg" src="images/loader.gif"
+                                                       alt="Image 1"/></div>
+                            <div class="caption">
+                                <h3 class="text_6 color_9"><a href="https://www.rottentomatoes.com/m/sinister_2012">Sinister</a></h3>
+
+                                <p class="color_7">
+                                    Washed-up true-crime writer Ellison Oswalt finds a box of super 8 home movies which suggest the murder he's currently researching is the work of a serial killer whose work dates back to the 1960s.
+                                </p>
+
+                                <div class="rating-bar">
+                                    <div class="rating" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="box_6 indent_1">
+                            <div class="put-left"><img data-type="unveil" data-src="images/index-2_img02.jpg" src="images/loader.gif"
+                                                       alt="Image 2"/></div>
+                            <div class="caption">
+                                <h3 class="text_6 color_9"><a href="https://www.rottentomatoes.com/m/chappie">Chappie</a></h3>
+
+                                <p class="color_7">
+                                    In the near future, crime is patrolled by a mechanized police force. When one police droid, Chappie, is stolen and given new programming, he becomes the first robot with the ability to think and feel for himself.
+                                </p>
+
+                                <div class="rating-bar">
+                                    <div class="rating" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid_4">
+                        <div class="box_6">
+                            <div class="put-left"><img data-type="unveil" data-src="images/index-2_img03.jpg" src="images/loader.gif"
+                                                       alt="Image 3"/></div>
+                            <div class="caption">
+                                <h3 class="text_6 color_9"><a href="https://www.rottentomatoes.com/m/skyfall">Skyfall</a></h3>
+
+                                <p class="color_7">
+                                    James Bond's loyalty to M is tested when her past comes back to haunt her. When MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.
+                                </p>
+
+                                <div class="rating-bar">
+                                    <div class="rating" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="box_6">
+                            <div class="put-left"><img data-type="unveil" data-src="images/index-2_img04.jpg" src="images/loader.gif"
+                                                       alt="Image 4"/></div>
+                            <div class="caption">
+                                <h3 class="text_6 color_9"><a href="https://www.rottentomatoes.com/m/terminator_genisys">Terminator Genysis</a></h3>
+
+                                <p class="color_7">
+                                    When John Connor, leader of the human resistance, sends Sgt. Kyle Reese back to 1984 to protect Sarah Connor and safeguard the future, an unexpected turn of events creates a fractured timeline.
+                                </p>
+
+                                <div class="rating-bar">
+                                    <div class="rating" style="width: 25%"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_4">
+                <h2 class="header_4">
+                    latest <br/>
+                    news
+                </h2>
+
+                <ul class="list_3">
+                    <li>
+                        <p class="text_7 color_4">04.12.2018</p>
+
+                        <h3 class="text_6 color_9"><a href="https://www.vulture.com/2018/04/who-dies-in-avengers-infinity-war-our-guesses.html">Avengers: Infinity War - Heroes will die?</a></h3>
+
+                        <p class="color_7">
+                            It has been confirmed that some heroes won't make it to the end in this epic
+                            tale. Which of these 33 characters will die in Avengers: Infinity War?
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text_7 color_4">05.20.2020</p>
+
+                        <h3 class="text_6 color_9"><a href="https://www.hollywoodreporter.com/heat-vision/justice-league-snyder-cut-plans-revealed-it-will-be-an-new-thing-1295102">Justice League Snyder Cut is coming</a></h3>
+
+                        <p class="color_7">
+                            It has been 3 years since the infamous Justice League movie was released in theaters. Now
+                            the Snyder cut is finally going to happen. Will this version be better than the original?
+                        </p>
+                    </li>
+                </ul>
+
+                <a class="btn_4" href="https://www.ign.com/movies">more news</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="bg_2">
+    <div class="container">
+        <div class="row">
+            <div class="grid_8">
+                <h2 class="header_5 color_4">
+                    our <br/>
+                    reviews
+                </h2>
+
+                <div class="box_7">
+                    <h3 class="text_6 color_9">
+                        <a href="https://www.raindance.org/top-10-film-review-websites/">
+                            These reviews are not from me. The links will lead to some sites 
+                            that I enjoy going to for some movie reviews!
+                        </a>
+                    </h3>
+
+                    <p class="color_7">
+                        I have nothing else to say, but please enjoy reading this gibberish that I don't understand. 
+                        Nullam quis turpis et tellus mattis semper quis quis odio. Sed consequat dui id nisl egestas, at
+                        eleifend tortor auctor. Vivamus malesuada facilisis enim. Sed eleifend non purus sed
+                        hendrerit. Proin non eros vulputate, imperdiet ligula ut, tincidunt sem. Nunc pretium, purus
+                        eget pretium eleifend, est libero consectetur dui, in fermentum turpis felis eu augue.
+                        Phasellus eros erat, pulvinar eu porta quis, vulputate eget mi. Donec vitae justo viverra,
+                        lobortis arcu a, porttitor nibh. Aenean in dui ac ligula ultrices facilisis. Nulla tempus
+                        dolor felis, quis consectetur lacus mollis id. Aenean ut nulla neque. Duis et vulputate
+                        massa <br/>
+                        <br/>
+                        vel gravida nulla. Curabitur vestibulum velit sed orci posuere ullamcorper.Ut nibh dui,
+                        venenatis id cursus quis, ultrices sed sem. Praesent lacinia rutrum mi, at condimentum felis
+                        tincidunt sit amet. Morbi lacus purus, sollicitudin et ultricies at, congue ut magna. Nullam
+                        enim lectus, bibendum eu nulla et, euismod semper quam. Donec in sem non lorem interdum
+                        malesuada. Sed ut lacus at est ultricies imperdiet. Aliquam in tristique ante. Integer nec
+                        porttitor metus. Maecenas adipisc ing varius tortor ut sagittis. Donec metus diam, pulvinar
+                        ac massa faucibus, lobortis
+                    </p>
+                    <a class="btn_4" href="https://www.ign.com/movies">more news</a>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="box_8 wrap_9">
+                    <h3 class="h3_1">this week <span>new</span></h3>
+                    <a class="img_1" href="https://www.pinterest.com/pin/474566879463313890/"><img src="images/index-2_img05.jpg"
+                                                   alt="Image 5"/></a>
+                    <a class="img_2" href="https://www.pinterest.com/pin/484699978638807949/"><img src="images/index-2_img06.jpg"
+                                                   alt="Image 6"/></a>
+                    <a class="img_3" href="https://www.pinterest.com/pin/404057397813222274/"><img src="images/index-2_img07.jpg"
+                                                   alt="Image 7"/></a>
+
+                    <h3 class="h3_2">Movies <span>releases</span></h3>
+                    <a class="img_4" href="https://www.pinterest.com/pin/478226054162869441/"><img src="images/index-2_img08.jpg"
+                                                   alt="Image 8"/></a>
+                    <a class="img_5" href="https://www.pinterest.com/pin/476255729328390420/"><img src="images/index-2_img09.jpg"
+                                                   alt="Image 9"/></a>
+                    <a class="img_6" href="https://www.pinterest.com.au/pin/571675746428810251/"><img src="images/index-2_img10.jpg"
+                                                   alt="Image 10"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid_12">
+                <h2 class="header_8 color_5">
+                    most popular <br/>
+                    movies review
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid_4">
+                <div class="box_6 indent_2">
+                    <div class="put-left">
+                        <img data-type="unveil" data-src="images/index-2_img11.jpg" src="images/loader.gif"
+                             alt="Image 11"/>
+                    </div>
+                    <div class="caption">
+                        <h3 class="text_6 color_9"><a href="https://www.rottentomatoes.com/m/superman_man_of_steel">Man of Steel</a></h3>
+
+                        <p class="color_7">
+                            An alien child is evacuated from his dying world and sent to Earth to live among humans. His peace is threatened, when other survivors of his home planet invade Earth.
+                        </p>
+                        <a class="btn_4" href="https://www.imdb.com/title/tt0770828/">more details</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="box_6 indent_2">
+                    <div class="put-left">
+                        <img data-type="unveil" data-src="images/index-2_img12.jpg" src="images/loader.gif"
+                             alt="Image 12"/>
+                    </div>
+                    <div class="caption">
+                        <h3 class="text_6 color_9"><a href="https://www.rottentomatoes.com/m/terminator_genisys">Terminator Genysis </a></h3>
+
+                        <p class="color_7">
+                            When John Connor, leader of the human resistance, sends Sgt. Kyle Reese back to 1984 to protect Sarah Connor and safeguard the future, an unexpected turn of events creates a fractured timeline.
+                        </p>
+                        <a class="btn_4" href="https://www.imdb.com/title/tt1340138/">more details</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="grid_4">
+                <div class="box_6 indent_2">
+                    <div class="put-left">
+                        <img data-type="unveil" data-src="images/index-2_img13.jpg" src="images/loader.gif"
+                             alt="Image 13"/>
+                    </div>
+                    <div class="caption">
+                        <h3 class="text_6 color_9"><a href="https://www.rottentomatoes.com/m/iron_man_3">Iron Man 3</a></h3>
+
+                        <p class="color_7">
+                            When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.
+                        </p>
+                        <a class="btn_4" href="https://www.imdb.com/title/tt1300854/">more details</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="color_9">
+    <div class="container">
+        <div class="row">
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Reviews</h2>
+                <ul class="list_2">
+                    <li class="current"><a href="reviews.html">Latest Reviews</a></li>
+                    <li><a href="http://www.rottentomatoes.com/">Rotten Tomatoes</a></li>
+                    <li><a href="http://www.imdb.com/">IMDB</a></li>
+                    <li><a href="http://www.rogerebert.com/">Roger Ebert</a></li>
+                    <li><a href="http://www.guardian.co.uk/film">Guardian</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">News</h2>
+                <ul class="list_2">
+                    <li><a href="news.html">Latest News</a></li>
+                    <li><a href="https://www.screenrant.com/">Screen Rant</a></li>
+                    <li><a href="https://www.cinemablend.com/news.php">Cinema Blend</a></li>
+                    <li><a href="https://editorial.rottentomatoes.com/news/">Rotten Tomatoes</a></li>
+                    <li><a href="https://movieweb.com/">Movie Web</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Videos</h2>
+                <ul class="list_2">
+                    <li><a href="https://www.youtube.com/channel/UCFTTjluTWUFW5nykBbdhe8g">Features</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCi8e0iOVk1fEOogdfu4YgfA">Previews</a></li>
+                    <li><a href="https://www.ign.com/videos/series/ign-movie-reviews">Reviews</a></li>
+                    <li><a href="https://movieweb.com/movie-trailers/">Trailers</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Follow us</h2>
+                <ul class="social-list">
+                    <li><a class="fa fa-facebook" href="https://www.facebook.com/"></a></li>
+                    <li><a class="fa fa-rss" href="https://rss.com/"></a></li>
+                    <li><a class="fa fa-twitter" href="https://www.twitter.com/"></a></li>
+                    <li><a class="fa fa-google-plus" href="https://www.google.com/account/about/"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="grid_12">
+                <div class="info">
+                    <h2>
+                        <a href="home.html"><span class="fa fa-film"></span> Movie <br/> Paradise</a>
+                    </h2>
+                    <p class="text_7">
+                        © <span id="copyright-year"></span> | <a href="policy.html">Privacy Policy</a> More Game Portal Website Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/game-portal-website-templates/" target="_blank">TemplateMonster.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

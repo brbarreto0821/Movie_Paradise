@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Products</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/movie.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative; background: #9dc02e; max-width: 1170px; width: 100%; margin: 0 auto;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+</head>
+
+<body>
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div class="container">
+        <div class="wrap_1">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="brand put-left">
+                        <div class="wrap">
+                            <h1>
+                                <a href="home.html"><span class="fa fa-film"></span> Movie <br/> Paradise</a>
+                            </h1>
+                        </div>
+                    </div>
+
+                    <form id="search" class="put-right" action="search/search.php" method="GET" accept-charset="utf-8">
+                        <label class="input_wrap" for="search">
+                            <input type="text" name="s" placeholder="Search:"/>
+                        </label>
+                        <a class="fa fa-search" onclick="document.getElementById('search').submit()"></a>
+                    </form>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <nav>
+                        <ul class="sf-menu">
+                            <li><a class="fa-home" href="home.html"></a></li>
+                            <li class="current"><a href="products.html">Products</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                            <li>
+                                <a href="news.html">News</a>
+                                <ul>
+                                    <li class="current"><a href="products.html">Products</a></li>
+                                    <li><a href="reviews.html">Reviews</a>
+                                        <ul>
+                                            <li class="current"><a href="products.html">Products Again</a></li>
+                                            <li><a href="reviews.html">Reviews again</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="policy.html">Privacy</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+<div class="bg_1 wrap_8">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <h2 class="header_4 color_1">
+                    Editor’s <br/>
+                    picks
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid_6">
+                <div class="box_3 indent_2">
+                    <div class="put-left _2"><img src="images/index-1_img01.jpg" alt="Image 1"/></div>
+                    <div class="caption">
+                        <h3 class="text_6 color_9">
+                            <a href="https://www.amazon.com/Dark-Knight-Single-Disc-Widescreen/dp/B001GZ6QC4">
+                                The Dark Knight
+                            </a>
+                        </h3>
+
+                        <p class="color_7">
+                            When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, 
+							the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.
+                        </p>
+
+                        <p class="text_7 color_7">
+                            Posted by <a href="#">Admin</a> 2 Days ago
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="grid_6">
+                <div class="box_3 indent_2">
+                    <div class="put-left _2"><img src="images/index-1_img02.jpg" alt="Image 2"/></div>
+                    <div class="caption">
+                        <h3 class="text_6 color_9">
+                            <a href="https://www.amazon.com/Dawn-Planet-Apes-DVD/dp/B00DHJTBF6">
+                                Dawn of the Planet of the Apes
+                            </a>
+                        </h3>
+
+                        <p class="color_7">
+                            A growing nation of genetically evolved apes led by Caesar is threatened 
+							by a band of human survivors of the devastating virus unleashed a decade earlier.
+                        </p>
+
+                        <p class="text_7 color_7">
+                            Posted by <a href="#">Admin</a> 2 Days ago
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid_6">
+                <div class="box_3 indent_2">
+                    <div class="put-left _2"><img src="images/index-1_img03.jpg" alt="Image 3"/></div>
+                    <div class="caption">
+                        <h3 class="text_6 color_9">
+                            <a href="https://www.amazon.com/X-men-Days-Future-James-McAvoy/dp/B01CE00PZI">
+                                X-Men: Days of Future Past
+                            </a>
+                        </h3>
+
+                        <p class="color_7">
+                            The X-Men send Wolverine to the past in a desperate effort to 
+							change history and prevent an event that results in doom for both humans and mutants.
+                        </p>
+
+                        <p class="text_7 color_7">
+                            Posted by <a href="#">Admin</a> 2 Days ago
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="grid_6">
+                <div class="box_3 indent_2">
+                    <div class="put-left _2"><img src="images/index-1_img04.jpg" alt="Image 4"/></div>
+                    <div class="caption">
+                        <h3 class="text_6 color_9">
+                            <a href="https://www.amazon.com/American-Sniper-DVD/dp/B00SB9Y6KW">
+                                American Sniper
+                            </a>
+                        </h3>
+
+                        <p class="color_7">
+                            Navy S.E.A.L. sniper Chris Kyle's pinpoint accuracy saves countless lives on the battlefield and turns him into a legend. 
+							Back home to his wife and kids after four tours of duty, 
+							however, Chris finds that it is the war he can't leave behind.
+                        </p>
+
+                        <p class="text_7 color_7">
+                            Posted by <a href="#">Admin</a> 2 Days ago
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg_2 wrap_5">
+<div class="container">
+<div class="row">
+<div class="grid_8">
+    <h2 class="header_5 color_4">
+        featured <br/>
+        movies
+    </h2>
+
+    <div class="row col_row">
+        <div class="col_md-2">
+            <div class="box_3 indent_3">
+                <div class="img-wrap"><img src="images/index-1_img05.jpg" alt="Image 5"/></div>
+                <div class="caption_1">
+                    <h3 class="text_6 color_6"><a href="https://www.amazon.com/Man-Steel-Blu-ray-Henry-Cavill/dp/B008JFUPK8">Man of Steel</a></h3>
+
+                    <p class="color_7">Director: Zack Snyder</p>
+
+                    <div class="color_7">
+                        <span class="rating-bar">
+                            <span class="rating" style="width: 85%"></span>
+                        </span> <br/>
+                        <a class="text_8 fa-comment" href="#">102 Comments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col_md-2">
+            <div class="box_3 indent_3">
+                <div class="img-wrap"><img src="images/index-1_img06.jpg" alt="Image 6"/></div>
+                <div class="caption_1">
+                    <h3 class="text_6 color_6"><a href="https://www.amazon.com/The-Interview-DVD/dp/B00M0GM7QC">The Interview</a></h3>
+
+                    <p class="color_7">
+                        Directors: Evan Goldberg, Seth Rogen
+                    </p>
+
+                    <div class="color_7">
+                        <span class="rating-bar">
+                            <span class="rating" style="width: 80%"></span>
+                        </span> <br/>
+                        <a class="text_8 fa-comment" href="#">5 Comments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col_md-2">
+            <div class="box_3 indent_3">
+                <div class="img-wrap"><img src="images/index-1_img07.jpg" alt="Image 7"/></div>
+                <div class="caption_1">
+                    <h3 class="text_6 color_6"><a href="https://www.amazon.com/San-Andreas-Special-Brad-Peyton/dp/B00YHRMMLC">San Andreas</a></h3>
+
+                    <p class="color_7">
+                        Director: Brad Peyton
+                    </p>
+
+                    <div class="color_7">
+                        <span class="rating-bar">
+                            <span class="rating" style="width: 40%"></span>
+                        </span> <br/>
+                        <a class="text_8 fa-comment" href="#">56 Comments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col_md-2">
+            <div class="box_3 indent_3">
+                <div class="img-wrap"><img src="images/index-1_img08.jpg" alt="Image 8"/></div>
+                <div class="caption_1">
+                    <h3 class="text_6 color_6"><a href="https://www.amazon.com/Inside-Out/dp/B012CGVY4A">Inside Out</a></h3>
+
+                    <p class="color_7">
+                        Directors: Pete Docter, Ronnie Del Carmen
+                    </p>
+
+                    <div class="color_7">
+                        <span class="rating-bar">
+                            <span class="rating" style="width: 100%"></span>
+                        </span> <br/>
+                        <a class="text_8 fa-comment" href="#">54 Comments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col_md-2">
+            <div class="box_3 indent_3">
+                <div class="img-wrap"><img src="images/index-1_img09.jpg" alt="Image 9"/></div>
+                <div class="caption_1">
+                    <h3 class="text_6 color_6"><a href="https://www.amazon.com/Iron-Man-DVD-Digital-Copy/dp/B008JFUO72">Iron Man 3</a></h3>
+
+                    <p class="color_7">
+                        Director: Shane Black
+                    </p>
+
+                    <div class="color_7">
+                        <span class="rating-bar">
+                            <span class="rating" style="width: 50%"></span>
+                        </span> <br/>
+                        <a class="text_8 fa-comment" href="#">32 Comments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col_md-2">
+            <div class="box_3 indent_3">
+                <div class="img-wrap"><img src="images/index-1_img10.jpg" alt="Image 10"/></div>
+                <div class="caption_1">
+                    <h3 class="text_6 color_6"><a href="https://www.amazon.com/Interstellar-DVD/dp/B00EXPOCBG">Interstellar</a></h3>
+
+                    <p class="color_7">
+                        Director: Christopher Nolan
+                    </p>
+
+                    <div class="color_7">
+                        <span class="rating-bar">
+                            <span class="rating" style="width: 90%"></span>
+                        </span> <br/>
+                        <a class="text_8 fa-comment" href="#">12 Comments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col_md-2">
+            <div class="box_3 indent_3">
+                <div class="img-wrap"><img src="images/index-1_img11.jpg" alt="Image 11"/></div>
+                <div class="caption_1">
+                    <h3 class="text_6 color_6"><a href="https://www.amazon.com/Tomorrowland-DVD/dp/B07DGD5Y7R">Tomorrowland</a></h3>
+
+                    <p class="color_7">
+                        Director: Brad Bird
+                    </p>
+
+                    <div class="color_7">
+                        <span class="rating-bar">
+                            <span class="rating" style="width: 20%"></span>
+                        </span> <br/>
+                        <a class="text_8 fa-comment" href="#">3 Comments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col_md-2">
+            <div class="box_3 indent_3">
+                <div class="img-wrap"><img src="images/index-1_img12.jpg" alt="Image 12"/></div>
+                <div class="caption_1">
+                    <h3 class="text_6 color_6"><a href="https://www.amazon.com/RoboCop-Joel-Kinnaman/dp/B00JL6L4UY">Robocop</a></h3>
+
+                    <p class="color_7">
+                       Director: José Padilha
+                    </p>
+
+                    <div class="color_7">
+                        <span class="rating-bar">
+                            <span class="rating" style="width: 30%"></span>
+                        </span> <br/>
+                        <a class="text_8 fa-comment" href="#">0 Comments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="grid_4">
+    <h2 class="header_6 color_5">
+        most <br/>
+        popular
+    </h2>
+
+    <div class="row col_row wrap_5">
+        <div class="col_md-12">
+            <ul class="marked-list color_7">
+                <li><a href="http://www.warnerbros.com/">Warner Bros. Pictures</a></li>
+                <li><a href="http://movies.disney.com/">Walt Disney Pictures</a></li>
+                <li><a href="http://www.universalpictures.com/">Universal Pictures</a></li>
+                <li><a href="http://www.lionsgate.com/movies/">Lionsgate Films</a></li>
+                <li><a href="http://www.openroadfilms.com/">Open Road Films</a></li>
+            </ul>
+        </div>
+        <div class="col_md-12">
+            <ul class="marked-list color_7">
+                <li><a href="http://www.sonypictures.com/">Columbia Pictures</a></li>
+                <li><a href="http://www.foxmovies.com/">20th Century Fox</a></li>
+                <li><a href="http://www.paramount.com/">Paramount Pictures</a></li>
+                <li><a href="http://www.dreamworksstudios.com/">DreamWorks Studios</a></li>
+                <li><a href="http://www.weinsteinco.com/">The Weinstein Company</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box_5">
+        <img src="images/index-1_img13.jpg" alt="Image 13"/>
+
+        <div class="caption_1 color_1">
+            dead <br/>
+            pool <br/>
+            <a class="fa fa-arrow-right" href="https://www.amazon.com/Deadpool-Ryan-Reynolds/dp/B01BLS9EVA"></a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="color_9">
+    <div class="container">
+        <div class="row">
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Reviews</h2>
+                <ul class="list_2">
+                    <li><a href="reviews.html">Latest Reviews</a></li>
+                    <li><a href="http://www.rottentomatoes.com/">Rotten Tomatoes</a></li>
+                    <li><a href="http://www.imdb.com/">IMDB</a></li>
+                    <li><a href="http://www.rogerebert.com/">Roger Ebert</a></li>
+                    <li><a href="http://www.guardian.co.uk/film">Guardian</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">News</h2>
+                <ul class="list_2">
+                    <li><a href="news.html">Latest News</a></li>
+                    <li><a href="https://www.screenrant.com/">Screen Rant</a></li>
+                    <li><a href="https://www.cinemablend.com/news.php">Cinema Blend</a></li>
+                    <li><a href="https://editorial.rottentomatoes.com/news/">Rotten Tomatoes</a></li>
+                    <li><a href="https://movieweb.com/">Movie Web</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Videos</h2>
+                <ul class="list_2">
+                    <li><a href="https://www.youtube.com/channel/UCFTTjluTWUFW5nykBbdhe8g">Features</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCi8e0iOVk1fEOogdfu4YgfA">Previews</a></li>
+                    <li><a href="https://www.ign.com/videos/series/ign-movie-reviews">Reviews</a></li>
+                    <li><a href="https://movieweb.com/movie-trailers/">Trailers</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Follow us</h2>
+                <ul class="social-list">
+                    <li><a class="fa fa-facebook" href="https://www.facebook.com/"></a></li>
+                    <li><a class="fa fa-rss" href="https://rss.com/"></a></li>
+                    <li><a class="fa fa-twitter" href="https://www.twitter.com/"></a></li>
+                    <li><a class="fa fa-google-plus" href="https://www.google.com/account/about/"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="grid_12">
+                <div class="info">
+                    <h2>
+                        <a href="home.html"><span class="fa fa-film"></span> Movie <br/> Paradise</a>
+                    </h2>
+                    <p class="text_7">
+                        © <span id="copyright-year"></span> | <a href="policy.html">Privacy Policy</a> More Game Portal Website Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/game-portal-website-templates/" target="_blank">TemplateMonster.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/movie.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-form.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/TMForm.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative; background: #9dc02e; max-width: 1170px; width: 100%; margin: 0 auto;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+</head>
+
+<body>
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div class="container">
+        <div class="wrap_1">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="brand put-left">
+                        <div class="wrap">
+                            <h1>
+                                <a href="home.html"><span class="fa fa-film"></span> Movie <br/> Paradise</a>
+                            </h1>
+                        </div>
+                    </div>
+
+                    <form id="search" class="put-right" action="search/search.php" method="GET" accept-charset="utf-8">
+                        <label class="input_wrap" for="search">
+                            <input type="text" name="s" placeholder="Search:"/>
+                        </label>
+                        <a class="fa fa-search" onclick="document.getElementById('search').submit()"></a>
+                    </form>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <nav>
+                        <ul class="sf-menu">
+                            <li><a class="fa-home" href="home.html"></a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                            <li>
+                                <a href="news.html">News</a>
+                                <ul>
+                                    <li><a href="products.html">Products</a></li>
+                                    <li><a href="reviews.html">Reviews</a>
+                                        <ul>
+                                            <li><a href="products.html">Products Again</a></li>
+                                            <li><a href="reviews.html">Reviews again</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="policy.html">Privacy</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li class="current"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+    <div class="bg_2 wrap_5">
+        <div class="container">
+            <div class="row">
+                <div class="grid_6">
+                    <h2 class="header_11 color_5">
+                        contact info
+                    </h2>
+
+                    <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094"
+                            ></iframe>
+
+                    <address>
+                        <p class="text_10 color_4">
+                            8901 Marmora Road, <br/>
+                            Glasgow, D04 89GR.
+                        </p>
+
+                        <dl class="color_7">
+                            <dt>Freephone:</dt>
+                            <dd>+1 800 559 6580</dd>
+                        </dl>
+                        <dl class="color_7">
+                            <dt>Telephone:</dt>
+                            <dd>+1 800 603 6035</dd>
+                        </dl>
+                        <dl class="color_7">
+                            <dt>FAX:</dt>
+                            <dd>+1 800 889 9898</dd>
+                        </dl>
+
+                        <p class="color_7">E-mail: <a href="#"> mail@demolink.org</a></p>
+                    </address>
+                </div>
+                <div class="grid_6">
+                    <h2 class="header_11 color_5">
+                        contact info
+                    </h2>
+
+                    <form id="contact-form">
+                        <div class="contact-form-loader"></div>
+                        <fieldset>
+
+                            <label class="name">
+                                <input type="text" name="name" placeholder="Name" value=""
+                                       data-constraints="@Required @JustLetters"/>
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*This is not a valid name.</span>
+                            </label>
+
+                            <label class="email">
+                                <input type="text" name="email" placeholder="E-mail" value=""
+                                       data-constraints="@Required @Email"/>
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*This is not a valid email.</span>
+                            </label>
+
+                            <label class="phone">
+                                <input type="text" name="phone" placeholder="Phone" value=""
+                                       data-constraints="@JustNumbers"/>
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*This is not a valid phone.</span>
+                            </label>
+
+                            <label class="message">
+                                <textarea name="message" placeholder="Message"
+                                          data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*The message is too short.</span>
+                            </label>
+
+                            <div class="btn-wrapper">
+                                <a class="btn" href="#" data-type="submit">send</a>
+                            </div>
+
+                        </fieldset>
+                        <div class="modal fade response-message">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                                aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="color_9">
+    <div class="container">
+        <div class="row">
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Reviews</h2>
+                <ul class="list_2">
+                    <li><a href="reviews.html">Latest Reviews</a></li>
+                    <li><a href="http://www.rottentomatoes.com/">Rotten Tomatoes</a></li>
+                    <li><a href="http://www.imdb.com/">IMDB</a></li>
+                    <li><a href="http://www.rogerebert.com/">Roger Ebert</a></li>
+                    <li><a href="http://www.guardian.co.uk/film">Guardian</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">News</h2>
+                <ul class="list_2">
+                    <li><a href="news.html">Latest News</a></li>
+                    <li><a href="https://www.screenrant.com/">Screen Rant</a></li>
+                    <li><a href="https://www.cinemablend.com/news.php">Cinema Blend</a></li>
+                    <li><a href="https://editorial.rottentomatoes.com/news/">Rotten Tomatoes</a></li>
+                    <li><a href="https://movieweb.com/">Movie Web</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Videos</h2>
+                <ul class="list_2">
+                    <li><a href="https://www.youtube.com/channel/UCFTTjluTWUFW5nykBbdhe8g">Features</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCi8e0iOVk1fEOogdfu4YgfA">Previews</a></li>
+                    <li><a href="https://www.ign.com/videos/series/ign-movie-reviews">Reviews</a></li>
+                    <li><a href="https://movieweb.com/movie-trailers/">Trailers</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Follow us</h2>
+                <ul class="social-list">
+                    <li><a class="fa fa-facebook" href="https://www.facebook.com/"></a></li>
+                    <li><a class="fa fa-rss" href="https://rss.com/"></a></li>
+                    <li><a class="fa fa-twitter" href="https://www.twitter.com/"></a></li>
+                    <li><a class="fa fa-google-plus" href="https://www.google.com/account/about/"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="grid_12">
+                <div class="info">
+                    <h2>
+                        <a href="home.html"><span class="fa fa-film"></span> Movie <br/> Paradise</a>
+                    </h2>
+                    <p class="text_7">
+                        © <span id="copyright-year"></span> | <a href="policy.html">Privacy Policy</a> More Game Portal Website Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/game-portal-website-templates/" target="_blank">TemplateMonster.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

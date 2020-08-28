@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/movie.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.unveil.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative; background: #9dc02e; max-width: 1170px; width: 100%; margin: 0 auto;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+</head>
+
+<body>
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div class="container">
+        <div class="wrap_1">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="brand put-left">
+                        <div class="wrap">
+                            <h1>
+                                <a href="home.html"><span class="fa fa-film"></span> Movie <br/> Paradise</a>
+                            </h1>
+                        </div>
+                    </div>
+
+                    <form id="search" class="put-right" action="search/search.php" method="GET" accept-charset="utf-8">
+                        <label class="input_wrap" for="search">
+                            <input type="text" name="s" placeholder="Search:"/>
+                        </label>
+                        <a class="fa fa-search" onclick="document.getElementById('search').submit()"></a>
+                    </form>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <nav>
+                        <ul class="sf-menu">
+                            <li><a class="fa-home" href="home.html"></a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                            <li class="current">
+                                <a href="news.html">News</a>
+                                <ul>
+                                    <li><a href="products.html">Products</a></li>
+                                    <li><a href="reviews.html">Reviews</a>
+                                        <ul>
+                                            <li><a href="products.html">Products Again</a></li>
+                                            <li><a href="reviews.html">Reviews again</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="policy.html">Privacy</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+    <div class="bg_1 wrap_10">
+        <div class="container">
+            <div class="row">
+                <div class="grid_4">
+                    <h2 class="header_4 color_4">
+                        recent <br/>
+                        posts
+                    </h2>
+
+                    <ul class="list_3">
+                        <li>
+                            <p class="text_7 color_4">8.27.2020</p>
+
+                            <h3 class="text_6 color_9"><a href="https://screenrant.com/changes-noticed-in-justice-league-snyder-cut/">10 Changes We've Already Noticed In The Justice League Snyder Cut</a></h3>
+                        </li>
+                        <li>
+                            <p class="text_7 color_4">07.07.2020</p>
+
+                            <h3 class="text_6 color_9"><a href="https://movieweb.com/bill-and-ted-excellent-adventure-4k-trailer/">Bill & Ted's Excellent Adventure 4K Trailer Arrives, Summer Release Announced</a></h3>
+                        </li>
+                        <li>
+                            <p class="text_7 color_4">02.17.2017</p>
+
+                            <h3 class="text_6 color_9"><a href="https://www.theverge.com/2017/2/17/14652584/logan-wolverine-x-men-movie-review-hugh-jackman-patrick-stewart">Logan review: not just the bloodiest X-Men movie, but also the saddest</a>
+                            </h3>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="grid_8">
+                    <h2 class="header_4">
+                        featured <br/>
+                        news
+                    </h2>
+
+                    <div class="row">
+                        <div class="grid_5">
+                            <div class="box_7 wrap_5">
+                                <h3 class="text_6 color_9"><a href="https://www.health.com/condition/infectious-diseases/coronavirus/are-movie-theaters-safe-coronavirus">Are Movie Theaters Safe During COVID-19? Here's What Experts Say About the Risks</a></h3>
+
+                                <p class="color_7">
+                                    Like many businesses, movie theaters have been hit hard by COVID-19. After closing their doors across the country 
+                                    when the coronavirus pandemic closed down most of the country in March, some chains have recently reopened or are 
+                                    opening their doors now. Understandably, many people have reservations about sitting in an enclosed space with strangers. 
+                                    In the coronavirus age, there’s a lot more to consider than what film to watch and what size popcorn to order. <br/>
+                                    <br/>
+                                    AMC Theatres reopened its doors on August 20. Two other big chains, Cinemark and Regal, 
+                                    have also opened theaters in selected cities. It's great news for film buffs who’ve been 
+                                    missing their big screen fix, but from a health and safety perspective, should we stick 
+                                    to at-home movie nights for a while longer? <br/> 
+                                    <br/>
+                                    <p class="text_7 color_4"><a href="https://www.health.com/author/claire-gillespie">Posted by Claire Gillespie</a></p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid_3">
+                            <ul class="marked-list_2 wrap_5">
+                                <li><a href="https://www.ign.com/movies">IGN</a></li>
+                                <li><a href="https://screenrant.com/movie-news/">ScreenRant</a></li>
+                                <li><a href="https://www.cinemablend.com/news.php">CinemaBlend</a></li>
+                                <li><a href="https://movieweb.com/movie-news/">MovieWeb</a></li>
+                                <li><a href="https://www.empireonline.com/movies/news/">EmpireOnline</a></li>
+                                <li><a href="https://variety.com/v/film/">Variety</a></li>
+                                <li><a href="https://www.joblo.com/movie-news/">JoBlo</a></li>
+                                <li><a href="https://www.comingsoon.net/hub/movie-news">ComingSoon.net</a></li>
+                                <li><a href="https://collider.com/all-news/">Collider</a></li>
+                                <li><a href="https://www.darkhorizons.com/section/movie-news/">Dark Horizons</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg_2">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <h2 class="header_5 color_4">
+                        latest <br/>
+                        videos
+                    </h2>
+
+                    <div id="owl_2">
+                        <div class="item">
+                            <div class="row">
+                                <div class="grid_6">
+                                    <iframe class="video" src="https://www.youtube.com/embed/ScgtWKrfoEI"
+                                            allowfullscreen></iframe>
+                                </div>
+                                <div class="grid_6">
+                                    <iframe class="video" src="https://www.youtube.com/embed/3iZ1Xb0HFjo"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="grid_6">
+                                    <iframe class="video" src="https://www.youtube.com/embed/jZJ1eBmI_N0"
+                                            allowfullscreen></iframe>
+                                </div>
+                                <div class="grid_6">
+                                    <iframe class="video" src="https://www.youtube.com/embed/59GzfGLqL7k"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid_12">
+                    <h2 class="header_6 color_5">
+                        latest from <br/>
+                        the blog
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid_6">
+                    <div class="box_9 wrap_5">
+                        <div class="put-left">
+                            <img data-type="unveil" data-src="images/index-3_img01.jpg" src="images/loader_w.gif" alt="Image 1"/>
+                        </div>
+                        <div class="caption">
+                            <h3 class="text_6 color_9">
+                                James Gunn's Suicide Squad: Everything We Know About The DC Reboot
+                            </h3>
+
+                            <p class="color_7">
+                                The 2016 DC movie Suicide Squad might not have been a hit with critics, but there's no denying it was a box office success. 
+                                The film, which was directed by David Ayer (Bright, Fury), made more than $746 million at the...
+                            </p>
+
+                            <a class="btn_4" href="https://www.gamespot.com/gallery/james-gunns-suicide-squad-everything-we-know-about/2900-3481/#1">read more</a></div>
+                        <div class="meta">
+                            <p class="text_7 color_7">
+                                Posted by <a href="https://www.gamespot.com/profile/mondodan/">Dan Auty</a> 7 days ago
+                            </p>
+
+                            <p class="text_7 color_7">
+                                <span class="fa fa-map-marker"></span> Los Angeles, California
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_6">
+                    <div class="box_9 wrap_5">
+                        <div class="put-left">
+                            <img data-type="unveil" data-src="images/index-3_img02.jpg" src="images/loader_w.gif" alt="Image 2"/>
+                        </div>
+                        <div class="caption">
+                            <h3 class="text_6 color_9">
+                                More Sonic the Hedgehog Pre-Visualization Footage Surfaces Online
+                            </h3>
+
+                            <p class="color_7">
+                                More pre-visualization footage from the first Sonic the Hedgehog movie has surfaced online after being shared by 
+                                Ellery Ortiz, a previs artist that worked at Digital Domain, one of the companies that worked on the 2020 movie.
+                            </p>
+
+                            <a class="btn_4" href="https://comicbook.com/gaming/news/sonic-the-hedgehog-pre-vis-video-early-design/">read more</a></div>
+                        <div class="meta">
+                            <p class="text_7 color_7">
+                                Posted by <a href="https://comicbook.com/author/rollin/">Rollin Bishop</a> 4 days ago
+                            </p>
+
+                            <p class="text_7 color_7">
+                                <span class="fa fa-map-marker"></span> Los Angeles, California
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="color_9">
+    <div class="container">
+        <div class="row">
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Reviews</h2>
+                <ul class="list_2">
+                    <li><a href="reviews.html">Latest Reviews</a></li>
+                    <li><a href="http://www.rottentomatoes.com/">Rotten Tomatoes</a></li>
+                    <li><a href="http://www.imdb.com/">IMDB</a></li>
+                    <li><a href="http://www.rogerebert.com/">Roger Ebert</a></li>
+                    <li><a href="http://www.guardian.co.uk/film">Guardian</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">News</h2>
+                <ul class="list_2">
+                    <li class="current"><a href="news.html">Latest News</a></li>
+                    <li><a href="https://www.screenrant.com/">Screen Rant</a></li>
+                    <li><a href="https://www.cinemablend.com/news.php">Cinema Blend</a></li>
+                    <li><a href="https://editorial.rottentomatoes.com/news/">Rotten Tomatoes</a></li>
+                    <li><a href="https://movieweb.com/">Movie Web</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Videos</h2>
+                <ul class="list_2">
+                    <li><a href="https://www.youtube.com/channel/UCFTTjluTWUFW5nykBbdhe8g">Features</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCi8e0iOVk1fEOogdfu4YgfA">Previews</a></li>
+                    <li><a href="https://www.ign.com/videos/series/ign-movie-reviews">Reviews</a></li>
+                    <li><a href="https://movieweb.com/movie-trailers/">Trailers</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <h2 class="text_6 color_4">Follow us</h2>
+                <ul class="social-list">
+                    <li><a class="fa fa-facebook" href="https://www.facebook.com/"></a></li>
+                    <li><a class="fa fa-rss" href="https://rss.com/"></a></li>
+                    <li><a class="fa fa-twitter" href="https://www.twitter.com/"></a></li>
+                    <li><a class="fa fa-google-plus" href="https://www.google.com/account/about/"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="grid_12">
+                <div class="info">
+                    <h2>
+                        <a href="home.html"><span class="fa fa-film"></span> Movie <br/> Paradise</a>
+                    </h2>
+                    <p class="text_7">
+                        © <span id="copyright-year"></span> | <a href="policy.html">Privacy Policy</a> More Game Portal Website Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/game-portal-website-templates/" target="_blank">TemplateMonster.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
