@@ -27,15 +27,15 @@ Project is created with:
 It is recommended to create a localserver on a terminal window (e.g. command line) to see everything in the html files.
 First you must be in the Movie_Paradise directory and then enter this command in the terminal if you have Python 3:
 
-...
+```
 $ python -m http.server 3000
-...
+```
 
 Or this if you have Python 2:
 
-...
+```
 $ python -m SimpleHTTPServer 3000
-...
+```
 
 Once this is done, you can then enter http://localhost:3000/ in a web browser.
 
