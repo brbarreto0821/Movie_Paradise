@@ -21,7 +21,7 @@ Project is created with:
 ## Features
 * It shows some movies that I enjoy watching
 * Offers trailers of movies from Youtube
-* Has movie reviews from well known websites 
+* Has movie reviews and articles from well known websites 
 
 ## Setup
 It is recommended to create a localserver on a terminal window (e.g. command line) to see everything in the html files.
